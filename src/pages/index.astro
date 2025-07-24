@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { profile } from "@/settings";
+import ProfilePictures from "@/assets/me.png";
+import Hero from "@/components/ui/Hero.astro";
+
+const { fullName, title, institute } = profile;
+---
+
+<Layout>
+	<!-- Hero Section -->
+	<section class="flex grow items-center gap-12 pb-12">
+		<Hero
+			fullName={fullName}
+			title={title}
+			institute={institute}
+			profilePicture={ProfilePictures}
+		/>
+	</section>
+
+	<!-- Mes créations (photos soudure) -->
+</Layout>

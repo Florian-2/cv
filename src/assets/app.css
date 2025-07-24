@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+	name: "light";
+	default: true;
+	--color-primary: #232d3d;
+	--color-secondary: #e7a333;
+}
+
+.menu-item {
+	@apply text-lg btn btn-ghost justify-start font-normal border-none shadow-none;
+}
+
+@utility badge {
+	@apply badge-ghost text-base p-2.5 rounded-2xl h-fit;
+}
+@utility drawer {
+	@apply bg-none;
+}

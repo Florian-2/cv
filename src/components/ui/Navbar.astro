@@ -1,0 +1,74 @@
+---
+import ProfilePictures from "@/assets/me.png";
+import { template } from "@/settings";
+import { Image } from "astro:assets";
+import { profile } from "../../settings";
+import SocialIcons from "./SocialIcons.astro";
+
+const { fullName, title } = profile;
+
+// Récupérer l'URL actuelle
+const currentPath = Astro.url.pathname;
+
+// Fonction pour déterminer si un lien est actif
+function isActiveLink(linkPath: string): boolean {
+	// Normaliser les chemins pour la comparaison
+	const normalizedCurrent = currentPath.replace(/\/$/, "") || "/";
+	const normalizedLink = linkPath.replace(/\/$/, "") || "/";
+
+	return normalizedCurrent === normalizedLink;
+}
+
+// Définir les classes pour les liens actifs et inactifs
+const activeLinkClass = "btn-active text-black";
+const inactiveLinkClass = "hover:bg-white/15 hover:text-white";
+---
+
+<aside class="px-4 py-8 h-screen w-[20rem] bg-primary text-white flex flex-col">
+	<div class="flex flex-col gap-20 grow">
+		<div class="flex justify-center items-center flex-col">
+			<Image
+				class="mask mask-circle size-44"
+				src={ProfilePictures}
+				alt={`Profile picture of ${fullName}`}
+			/>
+			<div class="flex flex-col items-center mt-8">
+				<h1 class="text-xl font-bold">{fullName}</h1>
+				<p class="text-lg">{title}</p>
+			</div>
+		</div>
+
+		<div class="mx-3">
+			<ul class="space-y-4 menu w-full menu-md overflow-y-auto">
+				<li>
+					<a
+						href={`${template.base}/`}
+						class={`${
+							isActiveLink(`${template.base}/`)
+								? activeLinkClass
+								: inactiveLinkClass
+						} menu-item`}
+					>
+						Home
+					</a>
+				</li>
+				<li>
+					<a
+						href={`${template.base}/cv`}
+						class={`${
+							isActiveLink(`${template.base}/cv`)
+								? activeLinkClass
+								: inactiveLinkClass
+						} menu-item`}
+					>
+						CV
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="mx-4 flex flex-col items-center gap-5">
+		<SocialIcons />
+	</div>
+</aside>
