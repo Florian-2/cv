@@ -26,6 +26,6 @@ export const template = {
 
 export const seo = {
 	default_title: "Florian Sicilia",
-	default_description: "CV en ligne.",
-	default_image: "/images/astro-academia.png",
+	default_description: "CV en ligne de Florian Sicilia, soudeur de formation",
+	default_image: "/images/MyMemoji.webp",
 };

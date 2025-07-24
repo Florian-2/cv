@@ -9,8 +9,10 @@ import LocationIcon from "@/assets/icons/location.svg";
 const { fullName, title, profilePicture } = Astro.props;
 ---
 
-<div class="flex flex-col gap-4 flex-1">
-	<div class="font-bold space-y-2">
+<div class="flex flex-col gap-4 flex-1 items-center lg:items-start">
+	<div
+		class="font-bold space-y-2 flex flex-col gap-2 items-center lg:items-start"
+	>
 		<p class="inline-block text-3xl">
 			Bonjour <span class="animate-bounce inline-block">👋</span>
 		</p>
@@ -19,7 +21,7 @@ const { fullName, title, profilePicture } = Astro.props;
 		<p class="font-medium text-xl">{title}</p>
 	</div>
 
-	<p class="text-lg">
+	<p class="text-lg text-center lg:text-left">
 		Passionné d'informatique et particulièrement de développement, j'ai
 		intégré un parcours professionnalisant d'une durée de près de deux ans
 		dans le développement web. Animé par l'envie de nouveaux défis et attiré
@@ -55,5 +57,6 @@ const { fullName, title, profilePicture } = Astro.props;
 		src={profilePicture}
 		alt={fullName}
 		class="w-full h-full mask mask-circle size-44 object-cover"
+		loading="eager"
 	/>
 </div>
