@@ -5,7 +5,7 @@ export const experiences = [
 		title: "Développeur web",
 		location: "Crouy, 02880",
 		description:
-			"Durant ce contrat de 3 mois (CDD), j'ai grandement participé à la refonte et à l’ajout de fonctionnalités d’une application interne gérant les stocks de produits, ainsi qu'à la création d'un nouveau méga menu responsive pour le futur site",
+			"Durant ce contrat de 3 mois (CDD), j'ai grandement participé à la refonte et à l’ajout de fonctionnalités d’une application interne gérant les stocks de produits, ainsi qu'à la création d'un nouveau méga menu responsive pour le futur site.",
 	},
 	{
 		company: "France Travail",

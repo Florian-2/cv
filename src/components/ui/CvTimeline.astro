@@ -34,16 +34,19 @@ const { elements, colored } = Astro.props;
 					class={`${index % 2 === 0 ? "timeline-start" : "timeline-end"} mb-10 md:text-end`}
 				>
 					<time class="font-mono italic">{element.time}</time>
-					<div class="text-lg font-bold">
+					<h3 class="text-lg font-bold text-end">
 						{isExperience(element) ? element.title : element.degree}
-					</div>
-					<div>{element.description}</div>
+					</h3>
+					<p
+						class={`${index % 2 === 0 ? "md:text-start" : " md:text-end"} `}
+					>
+						{element.description}
+					</p>
 					<address>
-						<div>
-							{isExperience(element)
-								? element.company
-								: element.school}
-						</div>
+						{isExperience(element)
+							? element.company
+							: element.school}
+
 						<div>{element.location}</div>
 					</address>
 				</div>
