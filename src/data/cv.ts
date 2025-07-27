@@ -52,6 +52,6 @@ export const qualifications = [
 	{
 		title: "Qualification TIG NF EN ISO 9606-1",
 		description: "Qualification soudure H-L045 TIG sur tube inox de 48 mm x 2mm.",
-		link: "https://link.storjshare.io/s/juj6uuf7ytdgq5pbv4m7ejbha36q/pdf/CERTIFICAT%20NF%20EN%20ISO%209606-1%20141.pdf"
+		link: "https://drive.proton.me/urls/A510CPFAV4#MSC29UKP4UDB"
 	},
 ];
