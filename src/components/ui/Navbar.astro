@@ -28,10 +28,9 @@ const inactiveLinkClass = "hover:bg-white/15 hover:text-white";
 	<div class="flex flex-col gap-20 grow">
 		<div class="flex justify-center items-center flex-col">
 			<Image
-				class="mask mask-circle size-44"
+				class="mask mask-circle size-44 block lg:hidden"
 				src={ProfilePictures}
 				alt={`${fullName}`}
-				loading="eager"
 			/>
 			<div class="flex flex-col items-center mt-8">
 				<h1 class="text-xl font-bold">{fullName}</h1>

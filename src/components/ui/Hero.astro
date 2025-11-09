@@ -1,18 +1,16 @@
 ---
 import { Image } from "astro:assets";
 
-import SocialIcons from "./SocialIcons.astro";
-import PhoneIcon from "@/assets/icons/phone.svg";
 import CarIcon from "@/assets/icons/car.svg";
 import LocationIcon from "@/assets/icons/location.svg";
+import PhoneIcon from "@/assets/icons/phone.svg";
+import SocialIcons from "./SocialIcons.astro";
 
 const { fullName, title, profilePicture } = Astro.props;
 ---
 
 <div class="flex flex-col gap-4 flex-1 items-center lg:items-start">
-	<div
-		class="font-bold space-y-2 flex flex-col gap-2 items-center lg:items-start"
-	>
+	<div class="font-bold flex flex-col gap-1.5 items-center lg:items-start">
 		<p class="inline-block text-3xl">
 			Bonjour <span class="animate-bounce inline-block">👋</span>
 		</p>
@@ -26,16 +24,17 @@ const { fullName, title, profilePicture } = Astro.props;
 		intégré un parcours professionnalisant d'une durée de près de deux ans
 		dans le développement web. Animé par l'envie de nouveaux défis et attiré
 		par le travail manuel technique, j'ai entrepris une reconversion vers un
-		métier de l'industrie, celui de soudeur. Dans l'attente de reprendre ma
-		formation en septembre, je suis à la recherche de toute opportunité
-		professionnelle dans le secteur de l'industrie afin d'enrichir mes
-		compétences. Dynamique et consciencieux, j'apporte rigueur et motivation
-		à chaque projet, quel que soit le secteur d'activité.
+		métier de l'industrie, celui de soudeur. Dynamique et consciencieux,
+		j'apporte rigueur et motivation à chaque projet, quel que soit le
+		secteur d'activité.
 	</p>
 
-	<ul class="flex gap-4 flex-wrap [&>li]:badge [&>li]:badge-ghost">
+	<ul
+		class="flex gap-4 justify-center flex-wrap [&>li]:badge [&>li]:badge-ghost"
+	>
 		<li>
-			<LocationIcon width={17} height={17} />Soissons, 02200
+			<LocationIcon width={17} height={17} />Soissons, 02200 (rayon de
+			40km)
 		</li>
 		<li>
 			<CarIcon width={17} height={17} />Permis B
