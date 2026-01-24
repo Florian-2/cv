@@ -5,11 +5,11 @@ import "../assets/app.css";
 
 import BetterIcon from "../components/ui/BetterIcon.astro";
 
-import Navbar from "../components/ui/Navbar.astro";
 import Head from "../components/Head.astro";
+import Navbar from "../components/ui/Navbar.astro";
 
-import { seo, profile, template } from "../settings";
 import Footer from "../components/ui/Footer.astro";
+import { seo, template } from "../settings";
 
 type Props = {
 	title?: string;
@@ -32,6 +32,10 @@ const {
 		{template.transitions && <ClientRouter />}
 
 		<Head title={title} description={description} image={image} />
+		<script
+			defer
+			src="https://cloud.umami.is/script.js"
+			data-website-id="b6f42167-61fb-4705-86b1-5b3b536381f9"></script>
 	</head>
 	<body>
 		<div
