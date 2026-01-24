@@ -1,5 +1,13 @@
 export const experiences = [
 	{
+		company: "BSL Pipes",
+		time: "Nomvembre 2025 - Décembre 2025",
+		title: "Stage soudeur TIG",
+		location: "Billy-sur-Aisne, 02200",
+		description:
+			"Stage pratique de 3 semaines en soudage TIG sur inox/cupronickelStage ainsi que découverte des procédés de fabrication en tuyauterie industrielle.",
+	},
+	{
 		company: "Groupe Routage",
 		time: "Avril 2024 - Juillet 2024",
 		title: "Développeur web",
@@ -20,17 +28,17 @@ export const experiences = [
 export const education = [
 	{
 		school: "Promeo",
-		time: "Septembre 2025 - Avril 2026 (en cours)",
+		time: "Septembre 2025 - Mars 2026",
 		degree: "CQPM soudeur assembleur",
 		location: "Billy-sur-Aisne, 02089",
 		description:
-			"Formation qualifiante aux techniques de soudage et d'assemblage métallique. Maîtrise des procédés de soudage (TIG, MIG/MAG, électrode enrobée), lecture de plans, préparation et contrôle qualité des pièces. Respect des normes de sécurité et de fabrication. Certification reconnue par les entreprises du secteur métallurgique.",
+			"Formation qualifiante aux techniques de soudage et d'assemblage métallique. Maîtrise des procédés de soudage (TIG, MAG, électrode enrobée), lecture de plans, préparation et contrôle qualité des pièces. Respect des normes de sécurité et de fabrication. Certification reconnue par les entreprises du secteur métallurgique.",
 	},
 	{
 		school: "Promeo",
 		time: "Avril 2025",
 		degree: "Découverte des métiers de l'industrie",
-		location: "Billy-sur-Aisne, 02089",
+		location: "Billy-sur-Aisne, 02200",
 		description:
 			"Formation visant à transmettre les savoirs de base de divers métiers de l’industrie comme la chaudronnerie, la soudure, l'usinage.",
 	},
@@ -50,9 +58,9 @@ export const education = [
 
 export const qualifications = [
 	{
-		title: "Qualification TIG NF EN ISO 9606-1",
+		title: "Qualification NF EN ISO 9606-1 141 T BW FM1 S s2 D48.3 H-L045 ss, nb",
 		description:
-			"Qualification soudure H-L045 TIG sur tube inox de 48 mm x 2mm.",
+			"Qualification soudure HL045 TIG sur tube inox de 48 mm x 2mm.",
 		link: "https://drive.proton.me/urls/ZAJG5FJV00#LFw6Mq3Ktlnw",
 	},
 ];
