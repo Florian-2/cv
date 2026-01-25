@@ -2,9 +2,6 @@ export const profile = {
 	fullName: "Florian Sicilia",
 	title: "Apprenti Soudeur",
 	institute: "",
-	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
-	],
 };
 
 // Set equal to an empty string to hide the icon that you don't want to display

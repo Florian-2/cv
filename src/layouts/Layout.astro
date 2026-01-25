@@ -22,12 +22,10 @@ const {
 	description = seo.default_description,
 	image = seo.default_image,
 } = Astro.props;
-
-// <DarkLightController />
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 	<head>
 		{template.transitions && <ClientRouter />}
 
@@ -79,7 +77,8 @@ const {
 				<label
 					for="my-drawer"
 					aria-label="close sidebar"
-					class="drawer-overlay"></label>
+					class="drawer-overlay">FERMER</label
+				>
 				<Navbar />
 			</div>
 		</div>
@@ -87,11 +86,6 @@ const {
 </html>
 
 <style>
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--my-color: #252b30;
-		}
-	}
 	html,
 	body {
 		margin: 0;

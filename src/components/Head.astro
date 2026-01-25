@@ -22,10 +22,6 @@ const { title, description, image } = Astro.props;
 	name="google-site-verification"
 	content="Pdo4Bt-cCXfIZI-m3x357ufAt6KSccjkJ5EGWaT0qEA"
 />
-<script
-	defer
-	src="https://cloud.umami.is/script.js"
-	data-website-id="b6f42167-61fb-4705-86b1-5b3b536381f9"></script>
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -49,30 +45,8 @@ const { title, description, image } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<!-- Theme selector scripts
-<script is:inline>
-	// Get stored theme or default to light
-	const getStoredTheme = () => {
-		return localStorage.getItem("theme") || "light";
-	};
-
-	// Apply theme immediately to prevent flash
-	const theme = getStoredTheme();
-	document.documentElement.setAttribute("data-theme", theme);
-
-	// Re-apply theme after navigation
-	document.addEventListener("astro:after-swap", () => {
-		const currentTheme = getStoredTheme();
-		document.documentElement.setAttribute("data-theme", currentTheme);
-	});
-</script>
-<script>
-	import { themeChange } from "theme-change";
-	themeChange();
-
-	// Re-initialize after Astro view transitions
-	document.addEventListener("astro:after-swap", () => {
-		themeChange(false); // false = don't persist to localStorage
-	});
-</script>
- -->
+<!-- Umami Analytics -->
+<script
+	is:inline
+	src="https://cloud.umami.is/script.js"
+	data-website-id="b6f42167-61fb-4705-86b1-5b3b536381f9"></script>

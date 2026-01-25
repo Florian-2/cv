@@ -1,4 +1,5 @@
 ---
+import ArrowLeft from "@/assets/icons/arrow-left.svg";
 import ProfilePictures from "@/assets/me.png";
 import { template } from "@/settings";
 import { Image } from "astro:assets";
@@ -24,7 +25,16 @@ const activeLinkClass = "btn-active text-black";
 const inactiveLinkClass = "hover:bg-white/15 hover:text-white";
 ---
 
-<aside class="px-4 py-8 h-screen w-[20rem] bg-primary text-white flex flex-col">
+<aside
+	class="px-4 py-4 h-screen w-full max-w-80 min-w-64 bg-primary text-white flex flex-col"
+>
+	<label
+		for="my-drawer"
+		aria-label="close sidebar"
+		class="w-fit self-end p-2 cursor-pointer"
+		><ArrowLeft width={20} height={20} stroke-width={2.5} /></label
+	>
+
 	<div class="flex flex-col gap-20 grow">
 		<div class="flex justify-center items-center flex-col">
 			<Image
