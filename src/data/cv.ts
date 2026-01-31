@@ -1,5 +1,13 @@
 export const experiences = [
 	{
+		company: "Speciflex",
+		time: "Décembre 2025 - Janvier 2026",
+		title: "Stage soudeur TIG",
+		location: "Villers-Cotterêts, 02600",
+		description:
+			"Stage pratique de 3 semaines en soudage TIG sur inox/cupronickelStage ainsi que découverte des procédés de fabrication en tuyauterie industrielle.",
+	},
+	{
 		company: "BSL Pipes",
 		time: "Nomvembre 2025 - Décembre 2025",
 		title: "Stage soudeur TIG",
@@ -9,26 +17,26 @@ export const experiences = [
 	},
 	{
 		company: "Groupe Routage",
-		time: "Avril 2024 - Juillet 2024",
+		time: "2024",
 		title: "Développeur web",
 		location: "Crouy, 02880",
 		description:
 			"Durant ce contrat de 3 mois (CDD), j'ai grandement participé à la refonte et à l’ajout de fonctionnalités d’une application interne gérant les stocks de produits, ainsi qu'à la création d'un nouveau méga menu responsive pour le futur site.",
 	},
 	{
-		company: "France Travail",
-		time: "Mai 2022 - Décembre 2023",
-		title: "Service civique informatique",
-		location: "Soissons, 02200",
+		company: "(ESN) NEXTON",
+		time: "2024",
+		title: "Développeur TypeSpcrit/Node.js",
+		location: "A distance",
 		description:
-			"Service civique de 8 mois. Durant cette expérience, j'ai été chargé d'apporter une assistance numérique et humaine aux personnes souhaitant réaliser des démarches administratives.",
+			"Durant ma première mission en tant que développeur en sortie d'école, j'ai contribué à l'ajout de fonctionnalités et de tests pour une plateforme bancaire.",
 	},
 ];
 
 export const education = [
 	{
 		school: "Promeo",
-		time: "Septembre 2025 - Mars 2026",
+		time: "Septembre 2025 - Février 2026",
 		degree: "CQPM soudeur assembleur",
 		location: "Billy-sur-Aisne, 02089",
 		description:
