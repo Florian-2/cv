@@ -1,6 +1,7 @@
 ---
 import Envelope from "@/assets/icons/envelope.svg";
 import LinkedIn from "@/assets/icons/linkedin-in.svg";
+import Phone from "@/assets/icons/phone.svg";
 
 import { social } from "@/settings";
 
@@ -45,6 +46,20 @@ const calculatedContainerSize =
 			>
 				<title>Voir mon profil LinkedIn</title>
 				<LinkedIn class={calculatedIconSize} fill="currentColor" />
+			</a>
+		)
+	}
+	<!-- Téléphone -->
+	{
+		social.phone !== "" && (
+			<a
+				href={`tel:${social.phone}`}
+				target="_blank"
+				title={`${social.phone}`}
+				class={`${calculatedContainerSize} inline-flex items-center justify-center rounded-xl hover:bg-base-200 transition-all duration-300 hover:text-base-content`}
+			>
+				<title>Appeler moi</title>
+				<Phone class={calculatedIconSize} fill="currentColor" />
 			</a>
 		)
 	}

@@ -12,6 +12,10 @@
 	@apply text-lg btn btn-ghost justify-start font-normal border-none shadow-none;
 }
 
+.classTitle {
+	@apply text-2xl font-bold mb-6 border-b border-zinc-500 pb-2;
+}
+
 @utility badge {
 	@apply badge-ghost text-base p-2.5 rounded-2xl h-fit;
 }

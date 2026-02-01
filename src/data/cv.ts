@@ -21,7 +21,7 @@ export const experiences = [
 		title: "Développeur web",
 		location: "Crouy, 02880",
 		description:
-			"Durant ce contrat de 3 mois (CDD), j'ai grandement participé à la refonte et à l’ajout de fonctionnalités d’une application interne gérant les stocks de produits, ainsi qu'à la création d'un nouveau méga menu responsive pour le futur site.",
+			"J'ai travaillé à la refonte d'une application de gestion de stocks ainsi qu'à l'ajout de nouvelles fonctionnalités sur divers site web.",
 	},
 	{
 		company: "(ESN) NEXTON",
@@ -61,6 +61,24 @@ export const education = [
 		time: "Octobre 2021 - Avril 2022",
 		degree: "Titre RNCP Développeur front-end junior (niv 5 - Bac +2)",
 		description: "Formation de 8 mois développeur front-end junior",
+	},
+];
+
+export const weldingSkills = [
+	{
+		process: "TIG",
+		positions: "Toutes positions",
+		material: ["Acier", "Inox", "Cupronickel", "Aluminium"],
+	},
+	{
+		process: "MMA (éléctrode enrobée)",
+		positions: "PA, PB, PC, PE, PD, PF",
+		material: ["Acier", "Inox", "Baguette rutile et basique"],
+	},
+	{
+		process: "MAG",
+		positions: "PA, PB, PC, PE, PD, PF",
+		material: ["Acier"],
 	},
 ];
 

@@ -8,6 +8,7 @@ export const profile = {
 export const social = {
 	email: "sicilia.florian02@gmail.com",
 	linkedin: "//www.linkedin.com/in/florian-sicilia-dev",
+	phone: "0765290645",
 };
 
 export const template = {

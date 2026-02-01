@@ -3,7 +3,6 @@ import { Image } from "astro:assets";
 
 import CarIcon from "@/assets/icons/car.svg";
 import LocationIcon from "@/assets/icons/location.svg";
-import PhoneIcon from "@/assets/icons/phone.svg";
 import SocialIcons from "./SocialIcons.astro";
 
 const { fullName, title, profilePicture } = Astro.props;
@@ -20,27 +19,21 @@ const { fullName, title, profilePicture } = Astro.props;
 	</div>
 
 	<p class="text-lg text-center lg:text-left">
-		Animé par l'envie de nouveaux défis et attiré par le travail manuel
-		technique, j'ai entrepris une reconversion professionnelle vers un
-		métier de l'industrie, celui de soudeur. Actuellement en formation CQPM
-		Soudeur, je suis qualifié en soudage TIG HL045 sur inox. Mon parcours
-		atypique me permet d'allier rigueur technique, capacité d'adaptation et
-		polyvalence. Dynamique et consciencieux, j'apporte méthode et motivation
-		à chaque projet, quel que soit le secteur d'activité.
+		Soudeur qualifié CQPM et d’une licence TIG, Rigoureux et motivé, je suis
+		à la recherche d'une première expérience pour développer mes compétences
+		techniques et m'investir durablement dans ce secteur d'activité.
 	</p>
 
 	<ul
 		class="flex gap-4 justify-center flex-wrap [&>li]:badge [&>li]:badge-ghost"
 	>
+		<li>Procédés TIG/MMA/MAG</li>
 		<li>
 			<LocationIcon width={17} height={17} />Soissons, 02200 (rayon de
 			40km)
 		</li>
 		<li>
 			<CarIcon width={17} height={17} />Permis B
-		</li>
-		<li>
-			<PhoneIcon width={17} height={17} />07 65 29 06 45
 		</li>
 	</ul>
 
