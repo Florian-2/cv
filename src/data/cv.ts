@@ -71,7 +71,7 @@ export const weldingSkills = [
 		material: ["Acier", "Inox", "Cupronickel", "Aluminium"],
 	},
 	{
-		process: "MMA (éléctrode enrobée)",
+		process: "SAEE (éléctrode enrobée)",
 		positions: "PA, PB, PC, PE, PD, PF",
 		material: ["Acier", "Inox", "Baguette rutile et basique"],
 	},
